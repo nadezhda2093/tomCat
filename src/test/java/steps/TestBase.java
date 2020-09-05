@@ -21,6 +21,7 @@ public class TestBase {
     public void start() {
         WebDriverManager.firefoxdriver().setup();
         FirefoxOptions options = new FirefoxOptions();
+        //Запуск с|без браузером
         options.setHeadless(true);
         driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
